@@ -1,0 +1,23 @@
+@use 'colors';
+// GLOBAL STYLES - to avoid css code redundancy
+
+// BUTTONS
+.global__button {
+    text-align: center;
+    padding: 10px 25px !important;
+    border-radius: 5px;
+    border: none;
+    border-spacing: none;
+    background: none;
+}
+
+.global__button--red {
+    color: #FFF !important;
+    background-color: colors.$primary-red;
+    border: 2px solid #FFF;
+    &:hover {
+        border: 2px solid colors.$primary-red;
+        background-color: #FFF;
+        color: colors.$primary-red !important;
+    }
+}

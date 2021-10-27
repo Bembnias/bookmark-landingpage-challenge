@@ -1,0 +1,39 @@
+@use "../colors";
+// NAVIGATION STYLES
+.navigation {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    .navigation__list {
+        list-style-type: none;
+        display: flex;
+        text-transform: uppercase;
+        .navigation__item {
+            cursor: pointer;
+            color: colors.$dark-blue;
+            margin: 0 25px;
+            padding-top: 5px;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            &:hover {
+                color: colors.$primary-red;
+            }
+        }
+    }
+    .navigation__mobile-menu-icon {
+        display: none;
+    }
+}
+
+// NAV - MEDIA QUERIES
+@media only screen and (max-width: 740px) {
+    .navigation .navigation__list {
+        display: none;
+    }
+
+    .navigation .navigation__mobile-menu-icon {
+        display: block;
+    }
+}

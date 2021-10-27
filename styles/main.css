@@ -1,4 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+.global__button {
+  text-align: center;
+  padding: 10px 25px !important;
+  border-radius: 5px;
+  border: none;
+  border-spacing: none;
+  background: none;
+}
+
+.global__button--red {
+  color: #FFF !important;
+  background-color: #fa5757;
+  border: 2px solid #FFF;
+}
+.global__button--red:hover {
+  border: 2px solid #fa5757;
+  background-color: #FFF;
+  color: #fa5757 !important;
+}
+
+.navigation {
+  width: 80%;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation .navigation__list {
+  list-style-type: none;
+  display: flex;
+  text-transform: uppercase;
+}
+.navigation .navigation__list .navigation__item {
+  cursor: pointer;
+  color: #252b46;
+  margin: 0 25px;
+  padding-top: 5px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+.navigation .navigation__list .navigation__item:hover {
+  color: #fa5757;
+}
+.navigation .navigation__mobile-menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 740px) {
+  .navigation .navigation__list {
+    display: none;
+  }
+
+  .navigation .navigation__mobile-menu-icon {
+    display: block;
+  }
+}
 *, body {
   margin: 0;
   padding: 0;

@@ -1,4 +1,7 @@
-@use "colors";
+// MAIN STYLESHEET FILE
+@use "global-styles";
+@use "./components/navigation";
+@use "media";
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
 *, body {
