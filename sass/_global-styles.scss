@@ -4,20 +4,57 @@
 // BUTTONS
 .global__button {
     text-align: center;
+    font-size: 12px;
     padding: 10px 25px !important;
     border-radius: 5px;
     border: none;
     border-spacing: none;
     background: none;
+    cursor: pointer;
+
+    &--red {
+        color: #FFF !important;
+        background-color: colors.$primary-red;
+        border: 2px solid colors.$primary-red;
+        &:hover {
+            background-color: #FFF;
+            color: colors.$primary-red !important;
+        }
+    }
+
+    &--blue {
+        color: #FFF;
+        background-color: colors.$primary-blue;
+        border: 2px solid colors.$primary-blue;
+        -webkit-box-shadow: 0px 9px 5px -3px rgba(84, 110, 222, 0.15);
+        -moz-box-shadow: 0px 9px 5px -3px rgba(84, 110, 222, 0.15);
+        box-shadow: 0px 9px 5px -3px rgba(84, 110, 222, 0.15);
+        &:hover {
+            background-color: #FFF;
+            color: colors.$primary-blue;
+        }
+    }
+
+    &--grayish {
+        color: rgb(73, 73, 73);
+        background-color: #F2F2F2;
+        border: 2px solid #F2F2F2;
+        -webkit-box-shadow: 0px 9px 5px -3px rgba(84, 110, 222, 0.15);
+        -moz-box-shadow: 0px 9px 5px -3px rgba(84, 110, 222, 0.15);
+        box-shadow: 0px 9px 5px -3px rgba(84, 110, 222, 0.15);
+        &:hover {
+            background-color: #FFF;
+            border: 2px solid rgb(73, 73, 73);
+        }
+    }
 }
 
-.global__button--red {
-    color: #FFF !important;
-    background-color: colors.$primary-red;
-    border: 2px solid #FFF;
-    &:hover {
-        border: 2px solid colors.$primary-red;
-        background-color: #FFF;
-        color: colors.$primary-red !important;
+// TYPOGRAPHY
+.global__paragraph {
+    font-size: 14px;
+    line-height: 1.75;
+    color: colors.$grayish-blue;
+    &--justified {
+        text-align: justify;
     }
 }

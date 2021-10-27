@@ -1,0 +1,27 @@
+@use "../colors";
+// WELCOME HERO STYLES
+
+.welcome-hero {
+    margin-top: 50px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .welcome-hero__text {
+        margin-top: 30px;
+        .welcome-hero__header {
+            font-size: 36px;
+            color: colors.$dark-blue;
+            margin-bottom: 20px;
+        }
+        .welcome-hero__buttons {
+            margin-top: 20px;
+        }
+    }
+    .welcome-hero__illustration {
+        width: 100%;
+        img {
+            width: 100%
+        }
+    }
+}
